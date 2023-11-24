@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Info &middot; Resume Generator</title>
+    <link rel="stylesheet" href="assets/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+
 </head>
+
 <body>
-    
+
+    <div class="container-fluid">
+        <div class="text-center heading">
+            <h1 class="m-5 mt-3">Resume Generator</h1>
+            <hr>
+        </div>
+
+        <div class="row container-fluid">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <form action="generator.php" method="post">
+
+                    <h3>Personal Information</h3>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="jobTitle">Job Title</label>
+                            <input type="text" class="form-control" id="jobTitle" name="jobTitle"
+                                placeholder="Full Stack Developer">
+                        </div>
+                        <div class="custom-file col-md-6">
+                            <label for="profilePicture">Profile Picture</label>
+                            <input type="file" class="form-control" id="profilePicture" name="profilePicture">
+
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName"
+                                placeholder="Wilson">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Wanja">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="wanjaswilly@gmail.com">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastName">Phone Number</label>
+                            <input type="text" class="form-control" id="lastName" name="phoneNumber"
+                                placeholder="+254790052730">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="country">Country</label>
+                            <input type="text" class="form-control" id="country" name="country" placeholder="Kenya">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" id="city" name="city" placeholder="Nairobi">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" id="address" name="address"
+                                placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="postalCode">Postal Code</label>
+                            <input type="text" class="form-control" id="postalCode" name="postalCode"
+                                placeholder="10200 Nairobi">
+                        </div>
+                    </div>
+                    <hr>
+                    <h3>Proffesional Summary</h3>
+                    <p>A short paragraph interestin the reader! Mention your position, skills, qualifications, past
+                        experience, and your biggest achievements.</p>
+                    <textarea name="proffesionalSummary" id="proffesionalSummary" cols="30" rows="10"></textarea>
+                    <hr>
+                    <h3>Employment History</h3>
+                    <p>Mention your employment history, showing what you achieved by doing what with optional
+                        measure of
+                        progress</p>
+                    <textarea name="employmentHistory" id="employmentHistory" cols="30" rows="10"></textarea>
+
+                    <hr>
+                    <h3>Education</h3>
+                    <p>Show your varied education to match the value you will add to a given position</p>
+                    <textarea name="education" id="education" cols="30" rows="10"></textarea>
+                    <hr>
+                    <h3>Social Handles</h3>
+                    <p>Add relevant social handles and website.</p>
+                    <hr>
+                    <h3>Skills</h3>
+                    <p>Enter atleast 5 important skills to fit your position</p>
+                    <textarea name="skills" id="skills" cols="30" rows="10"></textarea>
+                    <hr>
+                    <h3>Languages</h3>
+                    <p>Add Langages</p>
+                    <hr>
+                    <h3>Add Your Section</h3>
+                    <button type="submit" class="btn btn-primary">Save</button>
+
+
+                </form>
+            </div>
+        </div>
+
+        <hr class="m-5 mt5">
+        <footer>
+            <p class="text-center">Resume Generator &copy 2023 -
+                <script> Date('Y') </script> Two Debrew Incorporation
+            </p>
+        </footer>
+    </div>
+
 </body>
+
 </html>
